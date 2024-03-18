@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.liStyle {
+    display: inline-block;
+    font-size: smaller;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 20px;
+    transition: all 1s ease-in-out;
+}
+
+.slider {
+    transition: all .5s ease-in-out;
+}
+
+.menuBar1,
+.menuBar2,
+.menuBar3 {
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: aliceblue;
+    border-radius: 1.5px;
+    transition: all .5s ease-in-out;
+}
+
+.hideLine2 {
+    opacity: 0;
+}
+
+.rotatePlus {
+    transform: rotate(45deg) translate(2px, 8px);
+}
+
+.rotateMinus {
+    transform: rotate(-45deg) translate(2px, -8px);
+}
+
+.overMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: -1000px;
+    top: 0px;
+    opacity: 0;
+    transition: all .5s ease-in;
+
+}
+
+.showOverMenu {
+    opacity: 0.8;
+    left: 0px;
+}
+
+.humbergerMenu li {
+    list-style: none;
+    font-size: 1rem;
+    color: #fff;
+    margin: 20px;
+    transition: transform .5s ease-in;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+li:hover {
+    opacity: .5;
+}
+
+.hideLiTag {
+    transform: translateY(-10px);
+}
+
+.myPhoto {
+    box-shadow: 0px 0px 70px 5px rgb(232, 232, 232);
+}
